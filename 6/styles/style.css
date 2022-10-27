@@ -1,0 +1,206 @@
+body {
+    width: 1200px;
+    padding: 0px;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.content {
+    display: block;
+    
+}
+
+.top-menu {
+    position: relative;
+    padding: 10px 50px;
+    height: 60px;
+    background-color: rgb(123, 43, 197);
+    display: flex;
+}
+
+
+
+.navigation-tab {
+    display: flex;
+    position: absolute;
+    right: 0%;
+}
+
+.navigation-tab img {
+    margin-top: 0px;
+    user-select: none;
+}
+
+.top-menu ul {
+    display: flex;
+    list-style-type: none
+}
+.top-menu li {
+    margin-right: 40px;
+    margin-top: 2px;
+}
+
+.top-menu li a {
+    color: white;
+    font-size: 15pt;
+}
+
+h1 {
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: 25pt;
+    font-weight: 900;
+    user-select: none;
+}
+
+.login-form {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0px 0px 0px 9999px rgba(70, 45, 66, 0.5);
+    display: none;
+}
+
+.login-form-cross {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.login-form p {
+    font-size: 20pt;
+    font-weight: 600;
+    user-select: none;
+}
+
+.login-form form {
+    position: relative;
+    left: 20px;
+    top:-5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.login-form label {
+    margin-bottom: 25px;
+    user-select: none;
+}
+
+.login-form input {
+    width: 370px;
+    height: 40px;
+}
+
+.login-form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(92, 92, 92);
+}
+
+.log-btn-area {
+    display: flex;
+}
+
+
+.log-btn-area label, input {
+    margin-bottom: 20px;
+}
+
+.log-btn-area button {
+    width: 90px;
+    height: 50px;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 20px;
+    background-color: rgb(172, 93, 204);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+.log-btn-area a {
+    margin-top: 15px;
+    color: blueviolet;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main 
+{
+    display: flex;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    width: 1500px;
+}
+
+.item {
+    display: block;
+    background-color: white;
+    width: min-content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item [img] {
+    width: 270px;
+    height: 400px;
+    
+}
+
+.item-text-first {
+    font-size: 14pt;
+    font-weight: 900;
+    user-select: none;
+}
+.item-text-second {
+    font-size: 12pt;
+    user-select: none;
+}
+
+.item-rbs {
+    margin-top: 60px;
+}
+
+.item-rbs button{
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    font-weight: 400;
+    border-radius: 8%;
+}
+
+
+.rubrics ul {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.rubrics p {
+    margin-left: 30px;
+    font-size: 25pt;
+    font-weight: 600;
+}
+
+.rubrics li {
+    margin-bottom: 20px;
+
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="content">
+            <div class="top-menu" >
+                <img src="./materials/design/logo.svg" width="185px">
+                <div class="navigation-tab">
+                    <img src="./materials/design/i-user.svg">
+                    <ul>
+                        <li class="navigation-btn log-btn">
+                            <a href="#">Войти</a>
+                        </li>
+                        <li class="navigation-btn reg-btn">
+                            <a href="#">Зарегистрироваться</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1>Последние публикации</h1>
+            <div class="main">
+                <div class="posts">
+                    <div class="item" data-id="1" data-rb="git console">
+                        <img src="./materials/content/post-1.png">
+                        <p class="item-text-first">Работа с Git в Visual Studio Code</p>
+                        <p class="item-text-second">Один из способов работать с Гитом</p>
+                        <div class="item-rbs">
+                            <button>Git</button>
+                            <button>Консоль</button>
+                        </div>
+                    </div>
+                    <div class="item" data-id="2" data-rb="figma"> 
+                        <img src="./materials/content/post-2.png">
+                        <p class="item-text-first">Adobe покупает Фигму. Всё пропало?</p>
+                        <p class="item-text-second">Не факт, но есть разные мнения.</p>
+                        <div class="item-rbs">
+                            <button>Figma</button>
+                        </div>
+                    </div>
+                    <div class="item" data-id="3" data-rb="education career">
+                        <img src="./materials/content/post-3.png">
+                        <p class="item-text-first">Все научились программировать. А дальше-то что?</p>
+                        <p class="item-text-second">Ученье - свет.</p>
+                        <div class="item-rbs">
+                            <button>Обучение</button>
+                            <button>Карьера</button>
+                        </div>
+                    </div>
+                    <div class="item" data-id="4" data-rb="education">
+                        <img src="./materials/content/post-4.png">
+                        <p class="item-text-first">Мне тяжело учиться, кто поможет?</p>
+                        <p class="item-text-second">Попали в патову ситуацию? Тогда кликайте на статью.</p>
+                        <div class="item-rbs">
+                            <button>Обучение</button>
+                        </div>
+                    </div>
+                    <div class="item" data-id="5" data-rb="education career">
+                        <img src="./materials/content/post-5.png">
+                        <p class="item-text-first">Ключевые навыки фронтендеров в 2022</p>
+                        <p class="item-text-second">Ежегодное исследование рынка от HTML Academy.</p>
+                        <div class="item-rbs">
+                            <button>Обучение</button>
+                            <button>Карьера</button>
+                        </div>
+                    </div>
+                    <div class="item" data-id="6" data-rb="news">
+                        <img src="./materials/content/post-6.png">
+                        <p class="item-text-first">Фронтент-новости</p>
+                        <p class="item-text-second">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</p>
+                        <div class="item-rbs">
+                            <button>Новости</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rubrics">
+                    <p>Рубрики</p>
+                    <ul>
+                        <li>
+                            <a class="btn-rb" data-r="education" href="#">Обучение</a>
+                        </li>
+                        <li>
+                            <a class="btn-rb" data-r="career" href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a class="btn-rb" data-r="figma" href="#">Figma</a>
+                        </li>
+                        <li>
+                            <a class="btn-rb" data-r="console" href="#">Консоль</a>
+                        </li>
+                        <li>
+                            <a class="btn-rb" data-r="git" href="#">Git</a>
+                        </li>
+                        <li>
+                            <a class="btn-rb" data-r="news" href="#">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="login-form">
+            <form onsubmit="return false;" action="" method="POST">
+                <p>Вход</p>
+                <label>
+                    Логин<br />
+                </label>
+                    <input type="email" name="login">
+                <label>
+                    Пароль<br />
+                </label>
+                    <input type="password" name="password">
+                <div class="log-btn-area">
+                    <button type="submit">Войти</button>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </form>
+            <img class="login-form-cross" src="./materials/design/cross.png" width="30px">
+        </div>
+    </body>
+    <script src="./scrpits/index.js"></script>
+</html>
