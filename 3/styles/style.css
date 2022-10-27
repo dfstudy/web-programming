@@ -1,0 +1,71 @@
+
+
+body {
+    width: 1280px;
+
+}
+
+.content {
+    margin: 30px;
+    margin-top: 5px;
+}
+
+.top-menu {
+    position: relative;
+    display: flex;
+}
+
+.promo-catalog {
+    display: block;
+}
+
+.navigation-tab {
+    display: flex;
+    position: absolute;
+    right: 0%;
+    margin-top: 75px;
+    margin-right: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20pt;
+    list-style-type: none;
+}
+
+.navigation-btn {
+    margin-left: 40px;
+}
+
+a {
+
+    color: black;
+}
+
+h1, h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
+}
+
+.main-catalog, .promo-catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.item {
+   margin: 10px;
+   width: min-content;
+}
+
+.promo-catalog img {
+    width: 280px;
+}
+
+.promo-catalog p {
+    font-size: 12pt;
+}
