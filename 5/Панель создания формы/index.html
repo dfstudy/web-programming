@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <title>Добавить запись</title>
+</head>
+<body>
+    <div class="top">
+        <div class="top-menu">
+            <img src="materials/design/logo.png">
+            <div class="navigation-tab">
+                <img src="materials/design/i-user.svg">
+
+                <div class="navigation-btns">
+                    <a class="user_btn" href="#">@UserAccountLogin</a>
+                    <button class="new_post">Новая запись</button>
+                    <a class="navigation-btn" href="#">Выйти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "content">
+        <h1 class = "add-name-post">
+            Добавить запись
+        </h1>
+
+        <div class = "area-post">
+
+            <label class = "text-name-post">
+                Заголовок
+            </label>
+            <input class = "text-area-post" type = "text">
+
+            <label class = "text-name-post">
+                Текст
+            </label>
+            <textarea class = "text-area-post text-area" type = "text"></textarea>
+
+            <label class = "text-name-post">
+                Выберите категорию
+            </label>
+            <select class = "text-area-post">
+                <option>
+                    Новости
+                </option>
+                <option>
+                    Figma
+                </option>
+                <option>
+                    Карьера
+                </option>
+                <option>
+                    Гит
+                </option>
+                <option>
+                    Без категории
+                </option>
+            </select>
+
+            <div class = "area-add-image">
+                <input id="add_image" class="add-btn" type="file" accept="image/*">
+                <label class = "add-btn">
+                    <img src = "materials/design/add.svg">
+                    <label class = "text_button">
+                        Прикрепить файл изображения
+                    </label>
+                </label>
+                
+                <img id = "image">
+            </div>
+            <button class = "public-btn">
+                Опубликовать
+            </button>
+        </div>
+
+    </div>
+
+     <footer>
+        <div class="content">
+            <div class="footer_content">
+                <div class="footer-tab">
+                    <a href="#" class="footer-btn">Об авторе</a>
+                    <a href="#" class="footer-btn">Технологии</a>
+                </div>
+
+                <p class="cpright">© Blog, 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
