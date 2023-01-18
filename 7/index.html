@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+
+<body>
+    <div id="vue">
+        <div class="top">
+            <div class="top-menu">
+                <img src="./materials/design/logo.png">
+                <div class="navigation-tab">
+                    <img src="./materials/design/i-user.svg">
+                    <div class="navigation-btns">
+
+                        <a class="navigation-btn" href="#">Войти</a>
+                        <a class="navigation-btn" href="#">Зарегистрироваться</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+                <h1 class="name-content">Последние публикации</h1>
+                <div class="main_content">
+
+                    <div class="main">
+                        <div class="posts">
+
+                            <!-- <div class="item" data-categories="git, console">
+                                <img class="item-image" src="./materials/content/post-1.png">
+                                <h2 class="item-text-first">Работа с Git в Visual Studio Code</h2>
+                                <label class="item-text-second">Один из способов работать с Гитом.</label>
+                                <div class="item-rbs">
+                                    <label class="item-rb">Git</label>
+                                    <label class="item-rb">Консоль</label>
+                                </div>
+                            </div> -->
+
+                            <div class ="item" v-for="item in items">
+                                <img class="item-image" v-bind:src="item.image">
+                                <h2 class="item-text-first">{{item.title}}</h2>
+                                <p class="item-text-second">{{item.intro}}</p>
+                                <div class="item-rbs">
+                                    <div class="item-rb" v-for="label in item.labels" v-bind:data-categories="label">{{label}}</div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <button class="expand-posts">Загрузить ещё 6</button>
+                    </div>
+                    <div class="rubrics">
+                        <h3 class="name-rubrics">Рубрики</h3>
+                        <button class="btn-rb" data-categories="education">Обучение</button>
+                        <button class="btn-rb" data-categories="career">Карьера</button>
+                        <button class="btn-rb" data-categories="figma">Figma</button>
+                        <button class="btn-rb" data-categories="console">Консоль</button>
+                        <button class="btn-rb" data-categories="git">Git</button>
+                        <button class="btn-rb" data-categories="news">Новости</button>
+                    </div>
+                </div>
+        </div>
+        <footer>
+            <div class="content">
+                <div class="footer_content">
+                    <div class="footer-tab">
+                        <a href="#" class="footer-btn">Об авторе</a>
+                        <a href="#" class="footer-btn">Технологии</a>
+                    </div>
+
+                    <p class="cpright">© Blog, 2022</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./scripts/vue.min.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
